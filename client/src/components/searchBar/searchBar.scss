@@ -72,24 +72,31 @@
       }
     }
 
-    button {
-      border: none;
-      cursor: pointer;
-      background-color: #fece51;
+    a {
       flex: 1;
+      background-color: #fece51;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      @include lg {
-        flex: none;
-        padding: 0 20px;
-      }
+      button {
+        border: none;
+        cursor: pointer;
+        background-color: #fece51;
 
-      @include sm {
-        padding: 10px;
-      }
+        // @include lg {
+        //   flex: none;
+        //   padding: 0 20px;
+        // }
 
-      img {
-        width: 24px;
-        height: 24px;
+        @include sm {
+          padding: 10px;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
